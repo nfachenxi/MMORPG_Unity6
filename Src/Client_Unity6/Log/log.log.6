@@ -1,0 +1,283 @@
+2024-11-10 17:11:09,249 [ 1] INFO  Unity: LoadingManager start
+2024-11-10 17:11:15,383 [ 1] INFO  Unity: DataManager > DataManager()
+2024-11-10 17:11:22,473 [ 1] INFO  Unity: UserLoginRequest::user :test psw:123
+2024-11-10 17:11:22,475 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-11-10 17:11:22,480 [ 1] INFO  Unity: DoConnect
+2024-11-10 17:11:22,482 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-11-10 17:11:22,487 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-11-10 17:11:22,493 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-11-10 17:12:13,439 [ 1] INFO  Unity: ProcessReceive exception:System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at Network.NetClient.ProcessRecv () [0x00084] in F:\MMORPG\mymmo\Src\Client\Assets\Scripts\Network\NetClient.cs:340 
+
+2024-11-10 17:12:13,440 [ 1] WARN  Unity: CloseConnection(), errorCode: 1001
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:ProcessRecv() (at Assets/Scripts/Network/NetClient.cs:354)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:434)
+
+2024-11-10 17:12:13,446 [ 1] INFO  Unity: DoConnect
+2024-11-10 17:12:13,447 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-11-10 17:12:13,448 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2024-11-10 17:12:15,490 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:15,492 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:15,509 [ 1] INFO  Unity: DoConnect
+2024-11-10 17:12:15,510 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-11-10 17:12:15,512 [ 1] INFO  Unity: Connect[1] to server 127.0.0.1:8000
+
+2024-11-10 17:12:17,550 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:17,551 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:17,579 [ 1] INFO  Unity: DoConnect
+2024-11-10 17:12:17,579 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-11-10 17:12:17,581 [ 1] INFO  Unity: Connect[2] to server 127.0.0.1:8000
+
+2024-11-10 17:12:19,616 [ 1] WARN  Unity: CloseConnection(), errorCode: 1005
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:274)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:19,617 [ 1] ERROR Unity: DoConnect SocketException:[10061,ConnectionRefused,10061]System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。
+
+  at System.Net.Sockets.Socket.Connect (System.Net.EndPoint remoteEP, Boolean requireSocketPolicy) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket+Worker.Connect () [0x00000] in <filename unknown>:0  
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+Network.NetClient:DoConnect() (at Assets/Scripts/Network/NetClient.cs:276)
+Network.NetClient:Connect(Int32) (at Assets/Scripts/Network/NetClient.cs:169)
+Network.NetClient:KeepConnect() (at Assets/Scripts/Network/NetClient.cs:315)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:432)
+
+2024-11-10 17:12:19,617 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :1 reason:Cannot connect to server
+2024-11-10 17:12:43,100 [ 1] INFO  Unity: UserLoginRequest::user :test psw:123
+2024-11-10 17:12:43,101 [ 1] INFO  Unity: ConnectToServer() Start 
+2024-11-10 17:12:43,101 [ 1] INFO  Unity: DoConnect
+2024-11-10 17:12:43,103 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2024-11-10 17:12:43,104 [ 1] INFO  Unity: Connect[3] to server 127.0.0.1:8000
+
+2024-11-10 17:12:43,105 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2024-11-10 17:12:43,711 [ 1] INFO  Unity: OnUserLogin:Failed [用户不存在.]
+2024-11-10 17:12:53,234 [ 1] INFO  Unity: UserRegisterRequest::user :test psw:123
+2024-11-10 17:12:53,350 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2024-11-10 17:12:55,380 [ 1] INFO  Unity: UserLoginRequest::user :test psw:123
+2024-11-10 17:12:55,421 [ 1] INFO  Unity: OnUserLogin:Success [登陆成功]
+2024-11-10 17:12:55,423 [ 1] INFO  Unity: LoadLevel: CharSelect
+2024-11-10 17:12:55,594 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-11-10 17:13:00,274 [ 1] INFO  Unity: SendCharacterCreate::charName :test1 class:Archer
+2024-11-10 17:13:00,358 [ 1] INFO  Unity: OnCharacterCreate:Success [None]
+2024-11-10 17:13:00,886 [ 1] INFO  Unity: Select Char:[0]test1[Archer]
+2024-11-10 17:13:01,311 [ 1] INFO  Unity: UserGameEnterRequest::CharacterID:0
+2024-11-10 17:13:01,344 [ 1] INFO  Unity: OnGameEnter: Success  [None] 
+2024-11-10 17:13:01,348 [ 1] INFO  Unity: OnMapCharacterEnter:Map1 Count:1
+2024-11-10 17:13:01,349 [ 1] INFO  Unity: AddCharacter: 1 : test1 Map: 1 Entity: (1:pos:(5000,4000,820),dir:(100,0,0),spd:0
+2024-11-10 17:13:01,351 [ 1] INFO  Unity: LoadLevel: MainCity
+2024-11-10 17:13:02,094 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2024-11-10 17:13:02,095 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2024-11-10 17:13:02,220 [ 1] INFO  Unity: LevelLoadCompleted:1
+2024-11-10 17:13:03,270 [ 1] INFO  Unity: SetDirection:(98, -20, 0)
+2024-11-10 17:13:03,271 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (98,-20,0) SPD: 0
+2024-11-10 17:13:03,365 [ 1] INFO  Unity: SetDirection:(93, -38, 0)
+2024-11-10 17:13:03,366 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (93,-38,0) SPD: 0
+2024-11-10 17:13:03,448 [ 1] INFO  Unity: SetDirection:(85, -53, 0)
+2024-11-10 17:13:03,448 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (85,-53,0) SPD: 0
+2024-11-10 17:13:03,540 [ 1] INFO  Unity: SetDirection:(74, -67, 0)
+2024-11-10 17:13:03,540 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (74,-67,0) SPD: 0
+2024-11-10 17:13:03,617 [ 1] INFO  Unity: SetDirection:(61, -79, 0)
+2024-11-10 17:13:03,617 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (61,-79,0) SPD: 0
+2024-11-10 17:13:03,721 [ 1] INFO  Unity: SetDirection:(43, -90, 0)
+2024-11-10 17:13:03,722 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (43,-90,0) SPD: 0
+2024-11-10 17:13:03,827 [ 1] INFO  Unity: MoveBack
+2024-11-10 17:13:03,828 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (43,-90,0) SPD: -300
+2024-11-10 17:13:03,829 [ 1] INFO  Unity: SetDirection:(24, -97, 0)
+2024-11-10 17:13:03,829 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (24,-97,0) SPD: -300
+2024-11-10 17:13:03,899 [ 1] INFO  Unity: SetDirection:(6, -100, 0)
+2024-11-10 17:13:03,901 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (6,-100,0) SPD: -300
+2024-11-10 17:13:04,001 [ 1] INFO  Unity: SetDirection:(-14, -99, 0)
+2024-11-10 17:13:04,002 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-14,-99,0) SPD: -300
+2024-11-10 17:13:04,085 [ 1] INFO  Unity: SetDirection:(-31, -95, 0)
+2024-11-10 17:13:04,085 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-31,-95,0) SPD: -300
+2024-11-10 17:13:04,173 [ 1] INFO  Unity: SetDirection:(-47, -88, 0)
+2024-11-10 17:13:04,174 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-47,-88,0) SPD: -300
+2024-11-10 17:13:04,259 [ 1] INFO  Unity: SetDirection:(-62, -78, 0)
+2024-11-10 17:13:04,260 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-62,-78,0) SPD: -300
+2024-11-10 17:13:04,358 [ 1] INFO  Unity: SetDirection:(-77, -64, 0)
+2024-11-10 17:13:04,359 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-77,-64,0) SPD: -300
+2024-11-10 17:13:04,470 [ 1] INFO  Unity: Stop
+2024-11-10 17:13:04,471 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-77,-64,0) SPD: 0
+2024-11-10 17:13:04,472 [ 1] INFO  Unity: SetDirection:(-88, -48, 0)
+2024-11-10 17:13:04,472 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-88,-48,0) SPD: 0
+2024-11-10 17:13:08,241 [ 1] INFO  Unity: SetDirection:(-95, -32, 0)
+2024-11-10 17:13:08,242 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-95,-32,0) SPD: 0
+2024-11-10 17:13:08,293 [ 1] INFO  Unity: MoveForward
+2024-11-10 17:13:08,294 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-95,-32,0) SPD: 300
+2024-11-10 17:13:08,391 [ 1] INFO  Unity: SetDirection:(-99, -15, 0)
+2024-11-10 17:13:08,392 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-99,-15,0) SPD: 300
+2024-11-10 17:13:08,493 [ 1] INFO  Unity: SetDirection:(-100, 4, 0)
+2024-11-10 17:13:08,494 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-100,4,0) SPD: 300
+2024-11-10 17:13:08,581 [ 1] INFO  Unity: SetDirection:(-98, 22, 0)
+2024-11-10 17:13:08,582 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-98,22,0) SPD: 300
+2024-11-10 17:13:08,676 [ 1] INFO  Unity: SetDirection:(-91, 41, 0)
+2024-11-10 17:13:08,676 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-91,41,0) SPD: 300
+2024-11-10 17:13:08,774 [ 1] INFO  Unity: SetDirection:(-82, 57, 0)
+2024-11-10 17:13:08,775 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-82,57,0) SPD: 300
+2024-11-10 17:13:08,865 [ 1] INFO  Unity: SetDirection:(-69, 72, 0)
+2024-11-10 17:13:08,865 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-69,72,0) SPD: 300
+2024-11-10 17:13:08,994 [ 1] INFO  Unity: SetDirection:(-55, 84, 0)
+2024-11-10 17:13:08,995 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:10,111 [ 1] INFO  Unity: SetPosition:(4706, 4447, 805)
+2024-11-10 17:13:10,111 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:10,303 [ 1] INFO  Unity: SetPosition:(4706, 4453, 805)
+2024-11-10 17:13:10,303 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:10,486 [ 1] INFO  Unity: SetPosition:(4706, 4459, 805)
+2024-11-10 17:13:10,487 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:10,666 [ 1] INFO  Unity: SetPosition:(4706, 4464, 805)
+2024-11-10 17:13:10,666 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:10,829 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2024-11-10 17:13:10,830 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-39,92,0) SPD: 300
+2024-11-10 17:13:10,867 [ 1] INFO  Unity: SetPosition:(4706, 4473, 805)
+2024-11-10 17:13:10,867 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-39,92,0) SPD: 300
+2024-11-10 17:13:10,953 [ 1] INFO  Unity: SetDirection:(-21, 98, 0)
+2024-11-10 17:13:10,954 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-21,98,0) SPD: 300
+2024-11-10 17:13:11,388 [ 1] INFO  Unity: SetDirection:(-39, 92, 0)
+2024-11-10 17:13:11,390 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-39,92,0) SPD: 300
+2024-11-10 17:13:11,557 [ 1] INFO  Unity: SetDirection:(-55, 84, 0)
+2024-11-10 17:13:11,558 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-55,84,0) SPD: 300
+2024-11-10 17:13:12,283 [ 1] INFO  Unity: SetDirection:(-70, 71, 0)
+2024-11-10 17:13:12,284 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-70,71,0) SPD: 300
+2024-11-10 17:13:12,383 [ 1] INFO  Unity: SetDirection:(-82, 57, 0)
+2024-11-10 17:13:12,383 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-82,57,0) SPD: 300
+2024-11-10 17:13:12,491 [ 1] INFO  Unity: SetDirection:(-92, 39, 0)
+2024-11-10 17:13:12,491 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-92,39,0) SPD: 300
+2024-11-10 17:13:12,590 [ 1] INFO  Unity: SetDirection:(-98, 19, 0)
+2024-11-10 17:13:12,591 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-98,19,0) SPD: 300
+2024-11-10 17:13:12,685 [ 1] INFO  Unity: SetDirection:(-100, -1, 0)
+2024-11-10 17:13:12,686 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-100,-1,0) SPD: 300
+2024-11-10 17:13:12,801 [ 1] INFO  Unity: SetDirection:(-98, -20, 0)
+2024-11-10 17:13:12,802 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-98,-20,0) SPD: 300
+2024-11-10 17:13:12,874 [ 1] INFO  Unity: SetPosition:(4390, 4874, 806)
+2024-11-10 17:13:12,874 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-98,-20,0) SPD: 300
+2024-11-10 17:13:12,958 [ 1] INFO  Unity: Stop
+2024-11-10 17:13:12,958 [ 1] INFO  Unity: MapEntityUpdateRequest : ID: 1 POS: SkillBridge.Message.NVector3 DIR: (-98,-20,0) SPD: 0
+2024-11-10 17:13:13,125 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:15,255 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:23,749 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:29,016 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:38,316 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:41,936 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:48,783 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:13:53,620 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:01,442 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:06,493 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:13,085 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:20,911 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:23,758 [ 1] WARN  Unity: Parameter 'Relax' does not exist.
+UnityEngine.Animator:SetTrigger(String)
+NPCController:Relax() (at Assets/Scripts/GameObject/NPCController.cs:37)
+<Actions>c__Iterator0:MoveNext() (at Assets/Scripts/GameObject/NPCController.cs:31)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2024-11-10 17:14:29,071 [ 1] INFO  Unity: Character_1_test1 OnDestroy :ID:1 POS:(4365, 4869, 806) DIR:(-98, -20, 0) SPD:0 
+2024-11-10 17:14:29,074 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2024-11-10 17:14:29,074 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+
